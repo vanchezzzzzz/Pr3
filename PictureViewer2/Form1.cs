@@ -8,7 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PictureViewer2
+namespace MatchingGame
+
 {
     public partial class Form1 : Form
     {
