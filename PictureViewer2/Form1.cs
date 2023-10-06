@@ -23,6 +23,7 @@ namespace MatchingGame
         public Form1()
         {
             InitializeComponent();
+            AssignIconsToSquares();
         }
         private void AssignIconsToSquares()
         {
