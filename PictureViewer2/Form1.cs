@@ -35,7 +35,19 @@ namespace MatchingGame
                     int randomNumber = random.Next(icons.Count);
                     iconLabel.Text = icons[randomNumber];
                     icons.RemoveAt(randomNumber);
+                    iconLabel.ForeColor = iconLabel.BackColor;
                 }
+            }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            Label clickedLabel = sender as Label;
+            if(clickedLabel !=null)
+            {
+                if (clickedLabel.ForeColor == Color.Black)
+                    return;
+                clickedLabel.ForeColor = Color.Black;
             }
         }
     }
