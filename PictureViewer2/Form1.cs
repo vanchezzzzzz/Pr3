@@ -23,7 +23,6 @@ namespace MatchingGame
         //firstClicked - первое нажатие игрока, second - второе, изначально равны нулю
         Label firstClicked = null;
         Label secondClicked = null;
-
         public Form1()
         {
             InitializeComponent();
