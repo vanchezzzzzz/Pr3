@@ -61,9 +61,9 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(172, 73);
+            this.btnStart.Location = new System.Drawing.Point(172, 82);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(75, 23);
+            this.btnStart.Size = new System.Drawing.Size(75, 29);
             this.btnStart.TabIndex = 3;
             this.btnStart.Text = "Старт";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -89,15 +89,15 @@
             // 
             // txtDate
             // 
-            this.txtDate.Location = new System.Drawing.Point(32, 60);
+            this.txtDate.Location = new System.Drawing.Point(32, 125);
             this.txtDate.Name = "txtDate";
-            this.txtDate.Size = new System.Drawing.Size(70, 20);
+            this.txtDate.Size = new System.Drawing.Size(230, 20);
             this.txtDate.TabIndex = 6;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(108, 67);
+            this.label3.Location = new System.Drawing.Point(38, 109);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
             this.label3.TabIndex = 7;
@@ -105,11 +105,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(196, 58);
+            this.button1.Location = new System.Drawing.Point(172, 48);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(38, 10);
+            this.button1.Size = new System.Drawing.Size(75, 28);
             this.button1.TabIndex = 8;
-            this.button1.Text = "хуй";
+            this.button1.Text = "Сброс";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -117,7 +117,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(283, 108);
+            this.ClientSize = new System.Drawing.Size(294, 222);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtDate);
