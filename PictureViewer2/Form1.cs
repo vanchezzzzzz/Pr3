@@ -16,5 +16,12 @@ namespace PictureViewer2
         {
             InitializeComponent();
         }
+
+        private void tmrSecundomer_Tick(object sender, EventArgs e)
+        {
+            int tmp = Int32.Parse(txtSeconds.Text);
+            tmp += 1;
+            txtSeconds.Text = tmp.ToString();
+        }
     }
 }
