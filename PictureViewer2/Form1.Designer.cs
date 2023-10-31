@@ -35,6 +35,7 @@
             this.btnExit = new System.Windows.Forms.Button();
             this.tmr = new System.Windows.Forms.Timer(this.components);
             this.krokodial = new System.Windows.Forms.PictureBox();
+            this.openForm2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.chield)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.krokodial)).BeginInit();
             this.SuspendLayout();
@@ -82,11 +83,22 @@
             this.krokodial.TabIndex = 3;
             this.krokodial.TabStop = false;
             // 
+            // openForm2
+            // 
+            this.openForm2.Location = new System.Drawing.Point(12, 289);
+            this.openForm2.Name = "openForm2";
+            this.openForm2.Size = new System.Drawing.Size(105, 23);
+            this.openForm2.TabIndex = 4;
+            this.openForm2.Text = "Открыть форму 2";
+            this.openForm2.UseVisualStyleBackColor = true;
+            this.openForm2.Click += new System.EventHandler(this.openForm2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.openForm2);
             this.Controls.Add(this.krokodial);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnStart);
@@ -106,6 +118,7 @@
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Timer tmr;
         private System.Windows.Forms.PictureBox krokodial;
+        private System.Windows.Forms.Button openForm2;
     }
 }
 

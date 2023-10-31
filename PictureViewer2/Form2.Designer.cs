@@ -61,27 +61,27 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(177, 187);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.Size = new System.Drawing.Size(66, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "precision = ";
+            this.label3.Text = "Точность = ";
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Location = new System.Drawing.Point(49, 279);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(38, 13);
+            this.lblResult.Size = new System.Drawing.Size(53, 13);
             this.lblResult.TabIndex = 3;
-            this.lblResult.Text = "sum = ";
+            this.lblResult.Text = "Сумма = ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(177, 279);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.Size = new System.Drawing.Size(78, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "quantity = ";
+            this.label5.Text = "Количество = ";
             // 
             // txtX
             // 
@@ -105,6 +105,7 @@
             this.btnCalc.TabIndex = 7;
             this.btnCalc.Text = "Вычислить";
             this.btnCalc.UseVisualStyleBackColor = true;
+            this.btnCalc.Click += new System.EventHandler(this.btnCalc_Click);
             // 
             // Form2
             // 

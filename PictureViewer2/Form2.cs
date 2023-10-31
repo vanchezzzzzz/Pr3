@@ -16,5 +16,36 @@ namespace PictureViewer2
         {
             InitializeComponent();
         }
+
+        private void btnCalc_Click(object sender, EventArgs e)
+        {
+            int counter = 0;
+            double sum = 0;
+            double summand = 0;
+            double x;
+            double precision;
+            {
+                counter++;
+                if (double.TryParse(txtX.Text, out x))
+                {
+                    summand = double.Parse(txtX.Text) / counter;
+                }
+                sum += summand;
+            } 
+            bool f = false;
+            if (double.TryParse(txtPrecision.Text, out precision))
+            {
+                f = true;
+            }
+            while (f && Math.Abs(summand) > precision) ;
+            if (f)
+            {
+                lblResult.Text = "Сумма = " + sum + "Количество = " + counter;
+            }
+            else
+            {
+                MessageBox.Show("Введите верные значения!");
+            }
+        }
     }
 }
