@@ -19,33 +19,26 @@ namespace PictureViewer2
 
         private void btnCalc_Click(object sender, EventArgs e)
         {
-            int counter = 0;
+            //Считывание значений из текстового поля 
+            double x = Convert.ToDouble(textBox1.Text);
+            double accuracy = Convert.ToDouble(textBox2.Text);
+
             double sum = 0;
-            double summand = 0;
-            double x;
-            double precision;
+            double slog = x;
+            int colslog = 1;
+            // Выполняеются расчеты суммы ряда, пока значение слагаемого больше или равно заданной точности
+            while (Math.Abs(slog) >= accuracy)
             {
-                counter++;
-                if (double.TryParse(txtX.Text, out x))
-                {
-                    summand = double.Parse(txtX.Text) / counter;
-                }
-                sum += summand;
-            } 
-            bool f = false;
-            if (double.TryParse(txtPrecision.Text, out precision))
-            {
-                f = true;
+                // Добавляем текущее слагаемое к общей сумме
+                sum += slog;
+                // Увеличиваем количество слагаемых на 1
+                colslog++;
+                // Вычисляем новое значение слагаемого
+                slog = x / colslog;
             }
-            while (f && Math.Abs(summand) > precision) ;
-            if (f)
-            {
-                lblResult.Text = "Сумма = " + sum + "Количество = " + counter;
-            }
-            else
-            {
-                MessageBox.Show("Введите верные значения!");
-            }
+            // Вывод результатов 
+            Label4.Text = "sum = " + sum.ToString();
+            Label5.Text = "quanity" + colslog.ToString();
         }
     }
 }
