@@ -24,6 +24,7 @@ namespace PictureViewer2
             if(openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 pictureBox1.Load(openFileDialog1.FileName);
+                textBox1.Text = openFileDialog1.FileName;
             }
         }
 
@@ -54,6 +55,14 @@ namespace PictureViewer2
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             else
                 pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
+
+        private void saveFile_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                pictureBox1.Image.Save(saveFileDialog1.FileName);
+            }
         }
     }
 }
