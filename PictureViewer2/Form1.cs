@@ -64,5 +64,11 @@ namespace PictureViewer2
                 pictureBox1.Image.Save(saveFileDialog1.FileName);
             }
         }
+
+        private void openForm2_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
     }
 }

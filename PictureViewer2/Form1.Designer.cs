@@ -41,6 +41,7 @@
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openForm2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -71,6 +72,7 @@
             this.flowLayoutPanel1.Controls.Add(this.showButton);
             this.flowLayoutPanel1.Controls.Add(this.textBox1);
             this.flowLayoutPanel1.Controls.Add(this.button1);
+            this.flowLayoutPanel1.Controls.Add(this.openForm2);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(107, 342);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
@@ -126,12 +128,12 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(327, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(161, 20);
+            this.textBox1.Size = new System.Drawing.Size(90, 20);
             this.textBox1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(494, 3);
+            this.button1.Location = new System.Drawing.Point(423, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
@@ -168,6 +170,16 @@
     "s (*.*)|*.*";
             this.openFileDialog1.Title = "Выбор файла изображения";
             // 
+            // openForm2
+            // 
+            this.openForm2.Location = new System.Drawing.Point(504, 3);
+            this.openForm2.Name = "openForm2";
+            this.openForm2.Size = new System.Drawing.Size(75, 23);
+            this.openForm2.TabIndex = 6;
+            this.openForm2.Text = "Форма 2";
+            this.openForm2.UseVisualStyleBackColor = true;
+            this.openForm2.Click += new System.EventHandler(this.openForm2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -200,6 +212,7 @@
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button openForm2;
     }
 }
 

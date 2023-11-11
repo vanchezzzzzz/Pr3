@@ -28,73 +28,76 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.lst = new System.Windows.Forms.ListBox();
+            this.lstFromfile = new System.Windows.Forms.ListBox();
+            this.txtFileName = new System.Windows.Forms.TextBox();
+            this.txt = new System.Windows.Forms.TextBox();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnOpen = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // listBox1
+            // lst
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(72, 47);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(184, 173);
-            this.listBox1.TabIndex = 0;
+            this.lst.FormattingEnabled = true;
+            this.lst.Location = new System.Drawing.Point(72, 47);
+            this.lst.Name = "lst";
+            this.lst.Size = new System.Drawing.Size(184, 173);
+            this.lst.TabIndex = 0;
             // 
-            // listBox2
+            // lstFromfile
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(459, 47);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(184, 173);
-            this.listBox2.TabIndex = 1;
+            this.lstFromfile.FormattingEnabled = true;
+            this.lstFromfile.Location = new System.Drawing.Point(459, 47);
+            this.lstFromfile.Name = "lstFromfile";
+            this.lstFromfile.Size = new System.Drawing.Size(184, 173);
+            this.lstFromfile.TabIndex = 1;
             // 
-            // textBox1
+            // txtFileName
             // 
-            this.textBox1.Location = new System.Drawing.Point(72, 21);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtFileName.Location = new System.Drawing.Point(72, 21);
+            this.txtFileName.Name = "txtFileName";
+            this.txtFileName.Size = new System.Drawing.Size(100, 20);
+            this.txtFileName.TabIndex = 2;
             // 
-            // textBox2
+            // txt
             // 
-            this.textBox2.Location = new System.Drawing.Point(72, 257);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 20);
-            this.textBox2.TabIndex = 3;
+            this.txt.Location = new System.Drawing.Point(72, 257);
+            this.txt.Name = "txt";
+            this.txt.Size = new System.Drawing.Size(184, 20);
+            this.txt.TabIndex = 3;
             // 
-            // button1
+            // btnAdd
             // 
-            this.button1.Location = new System.Drawing.Point(72, 283);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(184, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Добавить в список";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnAdd.Location = new System.Drawing.Point(72, 283);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(184, 23);
+            this.btnAdd.TabIndex = 4;
+            this.btnAdd.Text = "Добавить в список";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // button2
+            // btnSave
             // 
-            this.button2.Location = new System.Drawing.Point(72, 228);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(184, 23);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Сохранить список в файл";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(72, 228);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(184, 23);
+            this.btnSave.TabIndex = 5;
+            this.btnSave.Text = "Сохранить список в файл";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // button3
+            // btnOpen
             // 
-            this.button3.Location = new System.Drawing.Point(459, 228);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(184, 23);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Загрузить данные из списка";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnOpen.Location = new System.Drawing.Point(459, 228);
+            this.btnOpen.Name = "btnOpen";
+            this.btnOpen.Size = new System.Drawing.Size(184, 23);
+            this.btnOpen.TabIndex = 6;
+            this.btnOpen.Text = "Загрузить данные из списка";
+            this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // button4
             // 
@@ -104,6 +107,7 @@
             this.button4.TabIndex = 7;
             this.button4.Text = "Выход";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label1
             // 
@@ -121,13 +125,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.btnOpen);
+            this.Controls.Add(this.btnSave);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.txt);
+            this.Controls.Add(this.txtFileName);
+            this.Controls.Add(this.lstFromfile);
+            this.Controls.Add(this.lst);
             this.Name = "Form2";
             this.Text = "Form2";
             this.ResumeLayout(false);
@@ -137,13 +141,13 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox lst;
+        private System.Windows.Forms.ListBox lstFromfile;
+        private System.Windows.Forms.TextBox txtFileName;
+        private System.Windows.Forms.TextBox txt;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Label label1;
     }
