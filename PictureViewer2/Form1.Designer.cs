@@ -83,7 +83,7 @@
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(75, 23);
             this.closeButton.TabIndex = 0;
-            this.closeButton.Text = "Close";
+            this.closeButton.Text = "Закрыть";
             this.closeButton.UseVisualStyleBackColor = true;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
@@ -94,7 +94,7 @@
             this.backgroundButton.Name = "backgroundButton";
             this.backgroundButton.Size = new System.Drawing.Size(75, 23);
             this.backgroundButton.TabIndex = 1;
-            this.backgroundButton.Text = "Set the background color";
+            this.backgroundButton.Text = "Цвет фона";
             this.backgroundButton.UseVisualStyleBackColor = true;
             this.backgroundButton.Click += new System.EventHandler(this.backgroundButton_Click);
             // 
@@ -105,7 +105,7 @@
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(75, 23);
             this.clearButton.TabIndex = 2;
-            this.clearButton.Text = "Clear";
+            this.clearButton.Text = "Очистить";
             this.clearButton.UseVisualStyleBackColor = true;
             this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
@@ -118,7 +118,7 @@
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(75, 23);
             this.showButton.TabIndex = 3;
-            this.showButton.Text = "Show a picture";
+            this.showButton.Text = "Выбор картинки";
             this.showButton.UseVisualStyleBackColor = true;
             this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
@@ -126,16 +126,16 @@
             // 
             this.textBox1.Location = new System.Drawing.Point(327, 3);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
+            this.textBox1.Size = new System.Drawing.Size(161, 20);
             this.textBox1.TabIndex = 4;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(453, 3);
+            this.button1.Location = new System.Drawing.Point(494, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Save file";
+            this.button1.Text = "Сохранить файл";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.saveFile_Click);
             // 
@@ -155,9 +155,9 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.Location = new System.Drawing.Point(3, 342);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 17);
+            this.checkBox1.Size = new System.Drawing.Size(78, 17);
             this.checkBox1.TabIndex = 2;
-            this.checkBox1.Text = "Stretch";
+            this.checkBox1.Text = "Растянуть";
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
