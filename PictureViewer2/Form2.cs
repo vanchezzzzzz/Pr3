@@ -45,7 +45,9 @@ namespace PictureViewer2
 
         private void btnOpen_Click(object sender, EventArgs e)
         {
+            //получить путь к файлу
             string fileName = txtFileName.Text;
+            //пиписька корочи
             lstFromfile.Items.Clear();
             using(FileStream fs = new FileStream(fileName, FileMode.Open))
             using (BinaryReader br = new BinaryReader(fs))
