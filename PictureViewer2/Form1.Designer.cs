@@ -36,12 +36,12 @@
             this.showButton = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.openForm2 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
-            this.openForm2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -141,6 +141,16 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.saveFile_Click);
             // 
+            // openForm2
+            // 
+            this.openForm2.Location = new System.Drawing.Point(504, 3);
+            this.openForm2.Name = "openForm2";
+            this.openForm2.Size = new System.Drawing.Size(75, 23);
+            this.openForm2.TabIndex = 6;
+            this.openForm2.Text = "Форма 2";
+            this.openForm2.UseVisualStyleBackColor = true;
+            this.openForm2.Click += new System.EventHandler(this.openForm2_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -151,6 +161,7 @@
             this.pictureBox1.Size = new System.Drawing.Size(688, 333);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // checkBox1
             // 
@@ -169,16 +180,6 @@
             this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
     "s (*.*)|*.*";
             this.openFileDialog1.Title = "Выбор файла изображения";
-            // 
-            // openForm2
-            // 
-            this.openForm2.Location = new System.Drawing.Point(504, 3);
-            this.openForm2.Name = "openForm2";
-            this.openForm2.Size = new System.Drawing.Size(75, 23);
-            this.openForm2.TabIndex = 6;
-            this.openForm2.Text = "Форма 2";
-            this.openForm2.UseVisualStyleBackColor = true;
-            this.openForm2.Click += new System.EventHandler(this.openForm2_Click);
             // 
             // Form1
             // 

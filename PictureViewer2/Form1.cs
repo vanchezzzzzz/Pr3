@@ -17,6 +17,7 @@ namespace PictureViewer2
             InitializeComponent();
         }
 
+        //Кнопка вызова диалога для выбора картинки
         private void showButton_Click(object sender, EventArgs e)
         {
             //Show the open File dialog.If the user clicks OK, load the
@@ -28,12 +29,14 @@ namespace PictureViewer2
             }
         }
 
+        //Кнопка очистки изображения
         private void clearButton_Click(object sender, EventArgs e)
         {
             //Clear the picture.
             pictureBox1.Image = null;
         }
 
+        //Кнопка для выбора цвета фона
         private void backgroundButton_Click(object sender, EventArgs e)
         {
             // Show the color dialog box. If the user clicks OK, change the
@@ -49,6 +52,7 @@ namespace PictureViewer2
             this.Close();
         }
 
+        //флажок растягивания изображения, изначально оно в состоянии Normal
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox1.Checked)
@@ -57,6 +61,7 @@ namespace PictureViewer2
                 pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
         }
 
+        //Кнопка сохранения картинки с выбором пути
         private void saveFile_Click(object sender, EventArgs e)
         {
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -64,7 +69,7 @@ namespace PictureViewer2
                 pictureBox1.Image.Save(saveFileDialog1.FileName);
             }
         }
-
+        //Открытие второй формы
         private void openForm2_Click(object sender, EventArgs e)
         {
             Form2 form2 = new Form2();
