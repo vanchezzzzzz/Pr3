@@ -73,6 +73,7 @@
             // 
             // txtN
             // 
+            this.txtN.Enabled = false;
             this.txtN.Location = new System.Drawing.Point(288, 37);
             this.txtN.Name = "txtN";
             this.txtN.Size = new System.Drawing.Size(100, 20);
@@ -127,18 +128,16 @@
             this.lblArr.AutoSize = true;
             this.lblArr.Location = new System.Drawing.Point(150, 231);
             this.lblArr.Name = "lblArr";
-            this.lblArr.Size = new System.Drawing.Size(30, 13);
+            this.lblArr.Size = new System.Drawing.Size(0, 13);
             this.lblArr.TabIndex = 9;
-            this.lblArr.Text = "lblArr";
             // 
             // lblResult
             // 
             this.lblResult.AutoSize = true;
             this.lblResult.Location = new System.Drawing.Point(150, 319);
             this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(48, 13);
+            this.lblResult.Size = new System.Drawing.Size(0, 13);
             this.lblResult.TabIndex = 10;
-            this.lblResult.Text = "lbtResult";
             // 
             // btnNewArr
             // 
@@ -148,6 +147,7 @@
             this.btnNewArr.TabIndex = 11;
             this.btnNewArr.Text = "Новый массив";
             this.btnNewArr.UseVisualStyleBackColor = true;
+            this.btnNewArr.Click += new System.EventHandler(this.btnNewArr_Click);
             // 
             // btnSort
             // 
@@ -158,6 +158,7 @@
             this.btnSort.TabIndex = 12;
             this.btnSort.Text = "Сортировка";
             this.btnSort.UseVisualStyleBackColor = true;
+            this.btnSort.Click += new System.EventHandler(this.btnSort_Click);
             // 
             // btnExit
             // 
@@ -167,6 +168,7 @@
             this.btnExit.TabIndex = 13;
             this.btnExit.Text = "Выход";
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
