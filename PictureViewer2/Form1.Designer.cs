@@ -39,6 +39,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.lblArr = new System.Windows.Forms.Label();
             this.lblResult = new System.Windows.Forms.Label();
+            this.btnNewArr = new System.Windows.Forms.Button();
+            this.btnSort = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -137,11 +140,42 @@
             this.lblResult.TabIndex = 10;
             this.lblResult.Text = "lbtResult";
             // 
+            // btnNewArr
+            // 
+            this.btnNewArr.Location = new System.Drawing.Point(153, 395);
+            this.btnNewArr.Name = "btnNewArr";
+            this.btnNewArr.Size = new System.Drawing.Size(106, 23);
+            this.btnNewArr.TabIndex = 11;
+            this.btnNewArr.Text = "Новый массив";
+            this.btnNewArr.UseVisualStyleBackColor = true;
+            // 
+            // btnSort
+            // 
+            this.btnSort.Enabled = false;
+            this.btnSort.Location = new System.Drawing.Point(282, 395);
+            this.btnSort.Name = "btnSort";
+            this.btnSort.Size = new System.Drawing.Size(106, 23);
+            this.btnSort.TabIndex = 12;
+            this.btnSort.Text = "Сортировка";
+            this.btnSort.UseVisualStyleBackColor = true;
+            // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(414, 395);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(106, 23);
+            this.btnExit.TabIndex = 13;
+            this.btnExit.Text = "Выход";
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnSort);
+            this.Controls.Add(this.btnNewArr);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.lblArr);
             this.Controls.Add(this.label6);
@@ -173,6 +207,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblArr;
         private System.Windows.Forms.Label lblResult;
+        private System.Windows.Forms.Button btnNewArr;
+        private System.Windows.Forms.Button btnSort;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
