@@ -44,7 +44,7 @@ namespace PictureViewer2
             //настраиваем оси графика
             chart1.ChartAreas[0].AxisX.Minimum = Xmin;
             chart1.ChartAreas[0].AxisX.Maximum = Xmax;
-            //определяем шаг сетки [eq
+            //определяем шаг сетки [eq  
             chart1.ChartAreas[0].AxisX.MajorGrid.Interval = Step;
 
             //добавляем вычисление значения в графики
