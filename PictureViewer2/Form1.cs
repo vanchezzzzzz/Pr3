@@ -39,5 +39,11 @@ namespace PictureViewer2
             chart1.Series[0].Points.DataBindXY(x, y1);
             chart1.Series[1].Points.DataBindXY(x, y2);
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            form2.Show();
+        }
     }
 }
