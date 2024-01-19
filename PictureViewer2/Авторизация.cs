@@ -17,16 +17,6 @@ namespace PictureViewer2
             InitializeComponent();
         }
 
-        private void txtBoxLogin_TextChanged(object sender, EventArgs e)
-        {
-            ShowToolTip(txtBoxLogin, "Введите ваш логин");
-        }
-
-        private void txtBoxPassword_TextChanged(object sender, EventArgs e)
-        {
-            ShowToolTip(txtBoxPassword, "Введите ваш пароль");
-        }
-
         private void checkBoxShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             txtBoxPassword.UseSystemPasswordChar = false;

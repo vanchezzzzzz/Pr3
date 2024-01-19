@@ -61,7 +61,7 @@
             this.txtBoxLogin.Name = "txtBoxLogin";
             this.txtBoxLogin.Size = new System.Drawing.Size(100, 20);
             this.txtBoxLogin.TabIndex = 2;
-            this.txtBoxLogin.TextChanged += new System.EventHandler(this.txtBoxLogin_TextChanged);
+
             // 
             // txtBoxPassword
             // 
@@ -69,7 +69,7 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(100, 20);
             this.txtBoxPassword.TabIndex = 3;
-            this.txtBoxPassword.TextChanged += new System.EventHandler(this.txtBoxPassword_TextChanged);
+
             // 
             // checkBoxShowPassword
             // 
