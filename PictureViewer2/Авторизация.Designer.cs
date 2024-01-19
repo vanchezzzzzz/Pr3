@@ -61,6 +61,7 @@
             this.txtBoxLogin.Name = "txtBoxLogin";
             this.txtBoxLogin.Size = new System.Drawing.Size(100, 20);
             this.txtBoxLogin.TabIndex = 2;
+            this.txtBoxLogin.TextChanged += new System.EventHandler(this.txtBoxLogin_TextChanged);
             // 
             // txtBoxPassword
             // 
@@ -68,6 +69,7 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(100, 20);
             this.txtBoxPassword.TabIndex = 3;
+            this.txtBoxPassword.TextChanged += new System.EventHandler(this.txtBoxPassword_TextChanged);
             // 
             // checkBoxShowPassword
             // 
@@ -78,6 +80,7 @@
             this.checkBoxShowPassword.TabIndex = 4;
             this.checkBoxShowPassword.Text = "Показать";
             this.checkBoxShowPassword.UseVisualStyleBackColor = true;
+            this.checkBoxShowPassword.CheckedChanged += new System.EventHandler(this.checkBoxShowPassword_CheckedChanged);
             // 
             // buttonEnter
             // 
@@ -87,6 +90,7 @@
             this.buttonEnter.TabIndex = 5;
             this.buttonEnter.Text = "Вход";
             this.buttonEnter.UseVisualStyleBackColor = true;
+            this.buttonEnter.Click += new System.EventHandler(this.buttonEnter_Click);
             // 
             // buttonExit
             // 
@@ -96,6 +100,7 @@
             this.buttonExit.TabIndex = 6;
             this.buttonExit.Text = "Выход";
             this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
             // 
             // Авторизация
             // 
