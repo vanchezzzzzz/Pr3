@@ -61,7 +61,6 @@
             this.txtBoxLogin.Name = "txtBoxLogin";
             this.txtBoxLogin.Size = new System.Drawing.Size(100, 20);
             this.txtBoxLogin.TabIndex = 2;
-
             // 
             // txtBoxPassword
             // 
@@ -69,7 +68,6 @@
             this.txtBoxPassword.Name = "txtBoxPassword";
             this.txtBoxPassword.Size = new System.Drawing.Size(100, 20);
             this.txtBoxPassword.TabIndex = 3;
-
             // 
             // checkBoxShowPassword
             // 
@@ -106,7 +104,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(484, 461);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonEnter);
             this.Controls.Add(this.checkBoxShowPassword);
