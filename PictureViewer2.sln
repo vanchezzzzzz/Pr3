@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32616.157
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PictureViewer2", "PictureViewer2\PictureViewer2.csproj", "{5D8913CB-E578-4D87-BA27-B76801537B34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Organizer", "PictureViewer2\Organizer.csproj", "{5D8913CB-E578-4D87-BA27-B76801537B34}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
